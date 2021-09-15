@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico 1</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Paint</h1>
+        </div>   
+    </header>
+
+    <div class="contenedor">
+        <div>
+            <canvas id="canvas" width="600" height="500" style="border-radius: 15px; border:#000 solid 4px;"></canvas><br>
+        </div>
+        
+            <div class="herramientass">
+
+				
+				<div id="herramientas">
+					
+					
+				<h2>Herramientas</h2>
+                Color <input id="color" type="color" oninput="canvascolor(this.value);">
+                Borde <input id="grosor" type="range" oninput="canvasgrosor(this.value);" min="1" max="10" value="1"><br>
+                <button id="lapiz">Lápiz</button>
+                
+                <button id="goma">Goma</button>
+                
+                <button id="limpiar">Vaciar Lienzo</button>
+				</div>
+				<br>
+
+				<div id="filtros">
+					<h2>Filtros</h2>
+					Brillo <input id="brilloinput" type="range" min="-20" max="60" value="20">
+					<button id="brillo">Brillo</button>
+				
+					Saturacion<input id="saturacioninput" type="range" min="1" max="100" value="1">
+					
+					<button id="binarizacion">Binarización</button>
+					
+					<button id="negativo">Negativo</button>
+					
+					<button id="sepia">Sepia</button>
+				
+					<button id="gris">Gris</button>
+				
+					<input id="foto" type="file" value="Archivo">
+					<button id="guardar">Guardar imagen</button>
+				</div>
+            </div>
+        
+    </div>
+    <script src="../js/tp1.js"></script>
+</body>
+</html>
