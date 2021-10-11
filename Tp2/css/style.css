@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.tituloFin{
+    font-family: 'Comic Neue', cursive;
+}
+header{
+align-self: center;
+}
+.marvel2{
+width: 500px;
+align-content: center;
+
+}
+.contenedor-img{
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+}
+#countdown{
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+}
+
+.ocultar{
+    visibility: hidden;
+}
+
+
